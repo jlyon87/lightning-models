@@ -23,30 +23,30 @@ Usage
 
 	// MyComponentHelper.js
 	({
-	initializeAccount: function(cmp) {
-		var account = models.initAccount();
-		account.Name = "New Account";
-		cmp.set("v.account", account);
-		console.log("account: ", account);
-	},
+		initializeAccount: function(cmp) {
+			var account = models.initAccount();
+			account.Name = "New Account";
+			cmp.set("v.account", account);
+			console.log("account: ", account);
+		},
 
-	initializeCase: function(cmp) {
-		// `case` is a reserved word in JS.
-		var myCase = models.initCase();
-		myCase.Subject = "New Case";
-		myCase.Description = "I'm a new case description.";
-		cmp.set("v.case", myCase);
-		console.log("case: ", myCase);
-	},
+		initializeCase: function(cmp) {
+			// `case` is a reserved word in JS.
+			var myCase = models.initCase();
+			myCase.Subject = "New Case";
+			myCase.Description = "I'm a new case description.";
+			cmp.set("v.case", myCase);
+			console.log("case: ", myCase);
+		},
 
-	initializeContact: function(cmp) {
-		var contact = models.initContact();
-		contact.FirstName = "Justin";
-		contact.LastName = "Lyon";
-		contact.Phone = "555.123.1234";
-		cmp.set("v.contact", contact);
-		console.log("contact: ", contact);
-	}
+		initializeContact: function(cmp) {
+			var contact = models.initContact();
+			contact.FirstName = "Justin";
+			contact.LastName = "Lyon";
+			contact.Phone = "555.123.1234";
+			cmp.set("v.contact", contact);
+			console.log("contact: ", contact);
+		}
 	})
 
 ```
